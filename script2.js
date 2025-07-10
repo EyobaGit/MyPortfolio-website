@@ -1,24 +1,31 @@
 // Project data array
 const projects = [
-
   {
     title: "Evangadi Forum",
     image: "https://www.ibrodev.com/Evangadi-Forum.png", // Replace with your image path
     liveLink: "https://evangadi-forum-group-recent.vercel.app/",
-    githubLink: "https://github.com/EyobaGit/Evangadi_Forum_Group_recent"
+    githubLink: "https://github.com/EyobaGit/Evangadi_Forum_Group_recent",
   },
-    {
+  {
+    title: "Amazon Clone",
+    image:
+      "https://www.parsehub.com/blog/content/images/size/w2000/2019/08/scrape-amazon-data.jpg",
+    liveLink: "https://amazon-client.netlify.app/",
+    githubLink: "https://github.com/EyobaGit/Amazon_client.git",
+  },
+  {
     title: "Netflix-clone",
-    image: "https://ik.imagekit.io/tp/20230207-proximus_pickx_netflix.png?tr=w-800,h-456", // Replace with your image path
-    liveLink: "https://eyobagit.github.io/Netflix-clone/",
-    githubLink: "https://github.com/EyobaGit/Netflix-clone.git"
+    image:
+      "https://ik.imagekit.io/tp/20230207-proximus_pickx_netflix.png?tr=w-800,h-456", // Replace with your image path
+    liveLink: "https://eyobagit.github.io/netflix-clone/",
+    githubLink: "https://github.com/EyobaGit/netflix-clone.git",
   },
-//   {
-//     title: "WeatherApp",
-//     image: "weatherapp-screenshot.jpg", // Replace with your image path
-//     liveLink: "https://weatherapp.example.com",
-//     githubLink: "https://github.com/eyob/weatherapp"
-//   }
+  //   {
+  //     title: "WeatherApp",
+  //     image: "weatherapp-screenshot.jpg", // Replace with your image path
+  //     liveLink: "https://weatherapp.example.com",
+  //     githubLink: "https://github.com/eyob/weatherapp"
+  //   }
 ];
 
 // Function to create project cards
@@ -27,7 +34,7 @@ function createProjectCards() {
   const grid = document.createElement("div");
   grid.classList.add("project-grid");
 
-  projects.forEach(project => {
+  projects.forEach((project) => {
     const card = document.createElement("div");
     card.classList.add("project-card");
 
